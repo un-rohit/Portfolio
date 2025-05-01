@@ -6,17 +6,18 @@ import {
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiPython,
+  // DiPython, // Removed Python
   DiGit,
   DiJava,
 } from "react-icons/di";
 import {
   SiRedis,
-  SiFirebase,
+  // SiFirebase,
   SiNextdotjs,
   SiSolidity,
   SiPostgresql,
   SiMysql,
+  SiKotlin,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -29,9 +30,9 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      {/* <Col xs={4} md={2} className="tech-icons">
         <DiPython />
-      </Col>
+      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
@@ -39,10 +40,13 @@ function Techstack() {
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
+        <DiNodejs /> {/* Node.js */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiKotlin /> {/* Kotlin */}
       </Col>
       {/* Add more tech icons based on your skills */}
     </Row>

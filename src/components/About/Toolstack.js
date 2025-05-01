@@ -1,30 +1,34 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
-} from "react-icons/si";
+import { DiVisualstudio } from "react-icons/di";
+import { SiSlack, SiTableau, SiAndroidstudio, SiGithub, SiGit, SiRstudio, SiMicrosoftexcel } from "react-icons/si";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <DiVisualstudio /> {/* VS Code */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <SiSlack /> {/* Slack */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <SiTableau /> {/* Tableau */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+        <SiAndroidstudio /> {/* Android Studio */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <SiGithub /> {/* GitHub */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGit /> {/* Git */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMicrosoftexcel /> {/* Excel */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiRstudio /> {/* R Studio */}
       </Col>
     </Row>
   );
