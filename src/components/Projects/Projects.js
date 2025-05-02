@@ -5,7 +5,8 @@ import ProjectCards from "./ProjectCards";
 import currencyConverter from "../../Assets/Projects/currency-converter.png";
 import medicineRecord from "../../Assets/Projects/medicine-record.png";
 import ticTacToe from "../../Assets/Projects/tic-tac-toe.png";
-import incomeTaxIcon from "../../Assets/Projects/income-tax.png"; // <-- Add a custom icon/image for Income Tax
+import incomeTaxIcon from "../../Assets/Projects/income-tax.png";
+import stickyNotes from "../../Assets/Projects/sticky-notes.png"; // <-- Add your sticky notes image here
 
 function Projects() {
   return (
@@ -21,7 +22,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCards
-              imgPath={incomeTaxIcon} // <-- Use your custom icon here
+              imgPath={incomeTaxIcon}
               title="Income Tax Department Website"
               description="Improved website loading speed by 40% using optimized queries and caching techniques. Ensured seamless user experience across all devices with clear navigation, readable fonts, and assistive technologies, while adhering to WCAG compliance. Optimized pages for quick loading and implemented secure access measures. Enabled content accessibility in multiple languages for a diverse audience. Tech: HTML, CSS, JavaScript, Bootstrap, MySQL, PHP."
               ghLink="https://github.com/un-rohit/IncomeTaxDept"
@@ -51,6 +52,14 @@ function Projects() {
               ghLink="https://github.com/un-rohit/tic-tac-toe"
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={stickyNotes}
+              title="Sticky Notes Chrome Extension"
+              description="A Chrome extension for creating and managing sticky notes directly in your browser. Features include note creation, editing, deletion, and persistent storage using Chrome's local storage API. Designed for quick access and productivity while browsing. Tech: JavaScript, HTML, CSS, Chrome Extensions API."
+              ghLink="https://github.com/un-rohit/un-rohit-Sticky-Notes-in-Chrome"
+            />
+          </Col>
         </Row>
         <Row style={{ justifyContent: "center", marginTop: "2rem" }}>
           <a
@@ -70,7 +79,7 @@ function Projects() {
             aria-label="Rohit Kumar's LinkedIn"
             style={{ marginLeft: 24 }}
           >
-            LinkedIn
+            LinkedIn LinkedIn
           </a>
           <a
             href="https://x.com/unrohitkumar"
