@@ -28,6 +28,9 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  const apiUrl = process.env.REACT_APP_API_URL;
+  console.log("API URL:", apiUrl);
+
   return (
     <Router>
       <Preloader load={load} />
